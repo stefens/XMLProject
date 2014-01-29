@@ -20,21 +20,15 @@ public class DBParseXpath extends AbstractAction {
 		super(texte);
 		requete = req;
 	}
-	 public DBParseXpath(String texte) {
-		 super(texte);
-		 fen = new MyWindow();
-		
-		 
-	}
-	DBFormat xpathRequester (String request){
-		DBFormat result = null;
-		
+	String xpathRequester (String request){
+		String result = request;
+		System.out.println(request);
 		return result;
 		
 	}
 	@Override
 	public void actionPerformed(ActionEvent e) {
-		System.out.println(requete.getText());
+		xpathRequester(requete.getText());
 		
 	}
 }

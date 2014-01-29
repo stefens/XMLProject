@@ -9,10 +9,6 @@ public class WindowDialog {
 		
 		@Override
 		public void run(){
-			
-			
-//			MyWindow fen = new MyWindow();
-//			fen.setVisible(true);
 			MainWindow fen = new MainWindow();
 			fen.setVisible(true);
 		}

@@ -21,8 +21,6 @@ public class DBParseXpathGUI extends AbstractAction {
 	 public DBParseXpathGUI(String texte) {
 		 super(texte);
 		 fen = new MyWindow();
-		
-		 
 	}
 	 
 	@Override
