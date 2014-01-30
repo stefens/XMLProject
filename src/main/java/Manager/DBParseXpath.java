@@ -33,7 +33,7 @@ public class DBParseXpath extends AbstractAction {
         public void actionPerformed(ActionEvent e) {
         		String retVal;
         		retVal = xpathRequester(requete.getText());
-               result.setText(retVal);
+        		System.out.println(retVal);
                 
                 
         }
