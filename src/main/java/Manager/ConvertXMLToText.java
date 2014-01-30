@@ -19,6 +19,8 @@ import java.util.logging.Logger;
 import javax.swing.AbstractAction;
 import javax.swing.JFileChooser;
 
+import org.xml.sax.SAXException;
+
 public class ConvertXMLToText extends AbstractAction {
 
 	private File f;
@@ -48,8 +50,17 @@ public class ConvertXMLToText extends AbstractAction {
 		bufferedWriter.close();	
 		buf.close();
 		
+		/*System.out.println("toto ::::::");
+		ConvertToCSV p = new ConvertToCSV();
+		try {
+			p.main(file);
+		} catch (SAXException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
 //		Logger _mylogger = Logger.getLogger("_mylogger");
-//		_mylogger.log(Level.INFO, "hey salut");
+//		_mylogger.log(Level.INFO, "hey salut");*/
 	}
 
 	@Override

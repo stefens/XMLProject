@@ -21,6 +21,9 @@ public class CreateBDD {
 				connection = DriverManager.getConnection("jdbc:sqlite:xml.db");
 				statement = connection.createStatement();
 			    statement.setQueryTimeout(30);
+			    statement.executeUpdate("create table person (id integer, name string)");
+			    statement.executeUpdate("insert into person values(5, 'tutu')");
+			    statement.close();
 			    
 		} catch (SQLException e) {}
 	    
@@ -29,6 +32,7 @@ public class CreateBDD {
 	public void createTable(String requete)
 	{
 		 try {
+			statement = connection.createStatement();
 			statement.executeUpdate(requete);
 		} catch (SQLException e) {e.printStackTrace();}
 	}
@@ -36,16 +40,18 @@ public class CreateBDD {
 	public void insertRow(String requete)
 	{
 		try {
-			if(requete !=  null)
+			if(requete !=  null){
+				statement = connection.createStatement();
 				statement.executeUpdate(requete);
-			
+			}
 		} catch (SQLException e) {e.printStackTrace();}
 	    
 	}
 	
 	public ResultSet select(String requete) throws SQLException
 	{
-		 return (ResultSet) statement.executeQuery(requete);
+		statement = connection.createStatement();
+		return (ResultSet) statement.executeQuery(requete);
 	}
 	
 	public Connection getConnection()
