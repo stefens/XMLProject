@@ -1,27 +1,27 @@
 package main.java.gui;
 
-import java.awt.Component;
 import java.awt.event.ActionEvent;
 
 import javax.swing.AbstractAction;
 import javax.swing.JButton;
 import javax.swing.JTextField;
 
-public class DBParseXpathGUI extends AbstractAction {
+public class ConvertDBtoXMLGUI extends AbstractAction {
 
 	/**
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
-	DBParseXpathCreation fen ;
+	ConvertDBtoXMLCreation fen ;
 
-	 public DBParseXpathGUI(String texte) {
+	 public ConvertDBtoXMLGUI(String texte) {
 		 super(texte);
-		 fen = new DBParseXpathCreation();
+		 fen = new ConvertDBtoXMLCreation();
 	}
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		fen.setVisible(true);
+		
 		
 	}
 }

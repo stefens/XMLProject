@@ -62,11 +62,11 @@ public class MainWindow extends JFrame {
 		bddPan.add(bt_majBDD);
 		bt_reqXpath = new JButton(new DBParseXpathGUI("Opérer requête XPATH"));
 		xpathPan.add(bt_reqXpath);
-		bt_convertFile = new JButton("Convertion BDD-> XML");
+		bt_convertFile = new JButton(new ConvertDBtoXMLGUI("Convertion BDD-> XML"));
 		convertPan.add(bt_convertFile);
 		bt_genSchema = new JButton("Générer schéma BDD");
 		schemaPan.add(bt_genSchema);
-		bt_xmltotext = new JButton("Convertion XML -> Texte");
+		bt_xmltotext = new JButton(new ConvertXMLtoTxtGUI("Convertion XML -> Texte"));
 		xmlToTextPan.add(bt_xmltotext);
 		
 		mainPan.add(bddPan);
