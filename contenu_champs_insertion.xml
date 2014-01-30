@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<tables>
+	<eleve>
+		<numeleve>1</numeleve>
+		<nom>Dupont</nom>
+		<prenom>Jean</prenom>
+		<idprofesseur>55</idprofesseur>
+	</eleve>
+
+	<eleve>
+		<numeleve>2</numeleve>
+		<nom>Dupond</nom>
+		<prenom>Luc</prenom>
+		<idprofesseur>55</idprofesseur>
+	</eleve>
+		
+	<prof>
+		<numprof>55</numprof>
+		<nom>Durant</nom>
+		<prenom>Philippe</prenom>
+	</prof>
+</tables>
