@@ -6,6 +6,8 @@ import java.io.File;
 import javax.swing.AbstractAction;
 import javax.swing.JFileChooser;
 
+import main.sql.CreateBDD;
+
 public class ConvertDBtoXML extends AbstractAction{
 
 	JFileChooser file;
@@ -15,7 +17,12 @@ public class ConvertDBtoXML extends AbstractAction{
 	}
 
 	void convertDBToXml (File f){
-		
+		try 
+		{
+			CreateBDD db = new CreateBDD();
+			
+			
+		} catch (ClassNotFoundException e) {e.printStackTrace();}
 	}
 
 	@Override
