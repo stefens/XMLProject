@@ -18,6 +18,7 @@ public class ConvertXMLtoTxtGUI extends AbstractAction {
 	 public ConvertXMLtoTxtGUI(String texte) {
 		 super(texte);
 		 fen = new ConvertXMLtoTxtCreation();
+		 fen.setDefaultCloseOperation(fen.HIDE_ON_CLOSE);
 	}
 
 	@Override

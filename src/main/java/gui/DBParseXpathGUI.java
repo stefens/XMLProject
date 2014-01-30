@@ -18,6 +18,7 @@ public class DBParseXpathGUI extends AbstractAction {
 	 public DBParseXpathGUI(String texte) {
 		 super(texte);
 		 fen = new DBParseXpathCreation();
+		 fen.setDefaultCloseOperation(fen.HIDE_ON_CLOSE);
 	}
 	@Override
 	public void actionPerformed(ActionEvent e) {

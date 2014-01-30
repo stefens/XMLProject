@@ -17,6 +17,7 @@ public class ConvertDBtoXMLGUI extends AbstractAction {
 	 public ConvertDBtoXMLGUI(String texte) {
 		 super(texte);
 		 fen = new ConvertDBtoXMLCreation();
+		 fen.setDefaultCloseOperation(fen.HIDE_ON_CLOSE);
 	}
 	@Override
 	public void actionPerformed(ActionEvent e) {
